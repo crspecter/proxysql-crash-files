@@ -1,0 +1,595 @@
+2021-02-08 00:39:16 [INFO] MySQL_HostGroups_Manager::commit() locked for 1ms
+2021-02-08 00:39:16 [INFO] Dumping current MySQL Servers structures for hostgroup 10
+2021-02-08 00:39:16 [INFO] Dumping mysql_servers: HG 10
++-----+-------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| hid | hostname    | port | gtid | weight | status | cmp | max_conns | max_lag | ssl | max_lat | comment | mem_pointer     |
++-----+-------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| 10  | 10.27.3.208 | 3455 | 0    | 2      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783169235840 |
++-----+-------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+2021-02-08 00:39:16 [INFO] Dumping current MySQL Servers structures for hostgroup 20
+2021-02-08 00:39:16 [INFO] Dumping mysql_servers: HG 20
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| hid | hostname     | port | gtid | weight | status | cmp | max_conns | max_lag | ssl | max_lat | comment | mem_pointer     |
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| 20  | 10.16.56.136 | 3455 | 0    | 1      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783110233888 |
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+2021-02-08 00:39:16 [INFO] Dumping current MySQL Servers structures for hostgroup 30
+2021-02-08 00:39:16 [INFO] Dumping mysql_servers: HG 30
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| hid | hostname     | port | gtid | weight | status | cmp | max_conns | max_lag | ssl | max_lat | comment | mem_pointer     |
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| 30  | 10.16.56.136 | 3455 | 0    | 1      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783110234048 |
+| 30  | 10.27.3.208  | 3455 | 0    | 2      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783110234368 |
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+2021-02-08 00:39:16 [INFO] Dumping current MySQL Servers structures for hostgroup 40
+2021-02-08 00:39:16 [INFO] Dumping mysql_servers: HG 40
++-----+----------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-------------+
+| hid | hostname | port | gtid | weight | status | cmp | max_conns | max_lag | ssl | max_lat | comment | mem_pointer |
++-----+----------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-------------+
++-----+----------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-------------+
+Error: signal 11:
+proxysql(_Z13crash_handleri+0x1a)[0x4b7a1a]
+/lib64/libc.so.6[0x3ca0832570]
+proxysql(_ZN3re23DFA14RunStateOnByteEPNS0_5StateEi+0x2bd)[0x89e46d]
+proxysql[0x89fdc0]
+proxysql(_ZN3re24Prog9SearchDFAERKNS_11StringPieceES3_NS0_6AnchorENS0_9MatchKindEPS1_PbPNS_10SparseSetTIvEE+0x3bf)[0x8a2aef]
+proxysql(_ZNK3re23RE25MatchERKNS_11StringPieceEmmNS0_6AnchorEPS1_i+0xb72)[0x87d0f2]
+proxysql(_ZNK3re23RE27DoMatchERKNS_11StringPieceENS0_6AnchorEPmPKPKNS0_3ArgEi+0x215)[0x87eda5]
+proxysql(_ZN13Session_Regex5matchEPc+0x32)[0x504bb2]
+proxysql(_ZN13MySQL_Session72handler___status_WAITING_CLIENT_DATA___STATE_SLEEP___MYSQL_COM_QUERY_qpoEP10_PtrSize_tPbb+0xdc7)[0x50be57]
+proxysql(_ZN13MySQL_Session7handlerEv+0x1b39)[0x519749]
+proxysql(_ZN12MySQL_Thread20process_all_sessionsEv+0x32c)[0x4f941c]
+proxysql(_ZN12MySQL_Thread3runEv+0xc4c)[0x50048c]
+proxysql(_Z24mysql_worker_thread_funcPv+0x6c)[0x4b088c]
+/lib64/libpthread.so.0[0x3ca1007aa1]
+/lib64/libc.so.6(clone+0x6d)[0x3ca08e8c4d]
+2021-02-08 00:39:16 main.cpp:1573:ProxySQL_daemonize_phase3(): [ERROR] ProxySQL crashed. Restarting!
+2021-02-08 00:39:16 [INFO] ProxySQL version 2.0.15-20-g32bb92c
+2021-02-08 00:39:16 [INFO] ProxySQL SHA1 checksum: 36464adb5d75bff0cf8c87106d722e12a1373961
+2021-02-08 00:39:16 [INFO] Angel process started ProxySQL process 12674
+Standard ProxySQL MySQL Logger rev. 2.0.0714 -- MySQL_Logger.cpp -- Wed Oct 28 20:09:40 2020
+Standard ProxySQL Cluster rev. 0.4.0906 -- ProxySQL_Cluster.cpp -- Wed Oct 28 20:09:40 2020
+Standard ProxySQL Statistics rev. 1.4.1027 -- ProxySQL_Statistics.cpp -- Wed Oct 28 20:09:40 2020
+Standard ProxySQL HTTP Server Handler rev. 1.4.1031 -- ProxySQL_HTTP_Server.cpp -- Wed Oct 28 20:09:40 2020
+Standard ProxySQL Admin rev. 2.0.6.0805 -- ProxySQL_Admin.cpp -- Wed Oct 28 20:09:40 2020
+2021-02-08 00:39:16 [INFO] ProxySQL SHA1 checksum: 36464adb5d75bff0cf8c87106d722e12a1373961
+Standard MySQL Threads Handler rev. 0.2.0902 -- MySQL_Thread.cpp -- Wed Oct 28 20:09:40 2020
+Standard MySQL Authentication rev. 0.2.0902 -- MySQL_Authentication.cpp -- Wed Oct 28 20:09:40 2020
+
+======================================
+
+2021-02-08 00:48:16 [INFO] MySQL_HostGroups_Manager::commit() locked for 1ms
+2021-02-08 00:48:16 [INFO] Dumping current MySQL Servers structures for hostgroup 10
+2021-02-08 00:48:16 [INFO] Dumping mysql_servers: HG 10
++-----+-------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| hid | hostname    | port | gtid | weight | status | cmp | max_conns | max_lag | ssl | max_lat | comment | mem_pointer     |
++-----+-------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| 10  | 10.27.3.208 | 3455 | 0    | 2      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783165041536 |
++-----+-------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+2021-02-08 00:48:16 [INFO] Dumping current MySQL Servers structures for hostgroup 20
+2021-02-08 00:48:16 [INFO] Dumping mysql_servers: HG 20
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| hid | hostname     | port | gtid | weight | status | cmp | max_conns | max_lag | ssl | max_lat | comment | mem_pointer     |
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| 20  | 10.16.56.136 | 3455 | 0    | 1      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783108136736 |
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+2021-02-08 00:48:16 [INFO] Dumping current MySQL Servers structures for hostgroup 30
+2021-02-08 00:48:16 [INFO] Dumping mysql_servers: HG 30
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| hid | hostname     | port | gtid | weight | status | cmp | max_conns | max_lag | ssl | max_lat | comment | mem_pointer     |
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| 30  | 10.16.56.136 | 3455 | 0    | 1      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783108136896 |
+| 30  | 10.27.3.208  | 3455 | 0    | 2      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783116525504 |
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+2021-02-08 00:48:16 [INFO] Dumping current MySQL Servers structures for hostgroup 40
+2021-02-08 00:48:16 [INFO] Dumping mysql_servers: HG 40
++-----+----------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-------------+
+| hid | hostname | port | gtid | weight | status | cmp | max_conns | max_lag | ssl | max_lat | comment | mem_pointer |
++-----+----------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-------------+
++-----+----------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-------------+
+Error: signal 11:
+proxysql(_Z13crash_handleri+0x1a)[0x4b7a1a]
+/lib64/libc.so.6[0x3ca0832570]
+proxysql[0x7fdb86]
+proxysql(_ZN16MySQL_ConnectionD1Ev+0x7c)[0x63fb6c]
+proxysql(_ZN17MySQL_Data_StreamD1Ev+0x2e8)[0x4ef4f8]
+proxysql(_ZN13MySQL_SessionD1Ev+0x48)[0x50aed8]
+proxysql(_ZN12MySQL_Thread20process_all_sessionsEv+0xe8)[0x4f91d8]
+proxysql(_ZN12MySQL_Thread3runEv+0xc4c)[0x50048c]
+proxysql(_Z24mysql_worker_thread_funcPv+0x6c)[0x4b088c]
+/lib64/libpthread.so.0[0x3ca1007aa1]
+/lib64/libc.so.6(clone+0x6d)[0x3ca08e8c4d]
+2021-02-08 00:48:20 main.cpp:1573:ProxySQL_daemonize_phase3(): [ERROR] ProxySQL crashed. Restarting!
+2021-02-08 00:48:20 [INFO] ProxySQL version 2.0.15-20-g32bb92c
+2021-02-08 00:48:20 [INFO] ProxySQL SHA1 checksum: 36464adb5d75bff0cf8c87106d722e12a1373961
+2021-02-08 00:48:20 [INFO] Angel process started ProxySQL process 19646
+Standard ProxySQL MySQL Logger rev. 2.0.0714 -- MySQL_Logger.cpp -- Wed Oct 28 20:09:40 2020
+Standard ProxySQL Cluster rev. 0.4.0906 -- ProxySQL_Cluster.cpp -- Wed Oct 28 20:09:40 2020
+Standard ProxySQL Statistics rev. 1.4.1027 -- ProxySQL_Statistics.cpp -- Wed Oct 28 20:09:40 2020
+Standard ProxySQL HTTP Server Handler rev. 1.4.1031 -- ProxySQL_HTTP_Server.cpp -- Wed Oct 28 20:09:40 2020
+Standard ProxySQL Admin rev. 2.0.6.0805 -- ProxySQL_Admin.cpp -- Wed Oct 28 20:09:40 2020
+2021-02-08 00:48:20 [INFO] ProxySQL SHA1 checksum: 36464adb5d75bff0cf8c87106d722e12a1373961
+Standard MySQL Threads Handler rev. 0.2.0902 -- MySQL_Thread.cpp -- Wed Oct 28 20:09:40 2020
+Standard MySQL Authentication rev. 0.2.0902 -- MySQL_Authentication.cpp -- Wed Oct 28 20:09:40 2020
+2021-02-08 00:48:20 [INFO] Dumping mysql_servers_incoming
++--------------+--------------+------+-----------+--------+--------+-------------+-----------------+---------------------+---------+----------------+---------+
+| hostgroup_id | hostname     | port | gtid_port | weight | status | compression | max_connections | max_replication_lag | use_ssl | max_latency_ms | comment |
++--------------+--------------+------+-----------+--------+--------+-------------+-----------------+---------------------+---------+----------------+---------+
+| 10           | 10.16.56.136 | 3455 | 0         | 1      | 0      | 0           | 200             | 0                   | 0       | 0              |         |
+| 10           | 10.27.3.208  | 3455 | 0         | 2      | 0      | 0           | 200             | 0                   | 0       | 0              |         |
++--------------+--------------+------+-----------+--------+--------+-------------+-----------------+---------------------+---------+----------------+---------+
+2021-02-08 00:48:20 [INFO] Dumping mysql_servers LEFT JOIN mysql_servers_incoming
++-------------+--------------+----------+------+
+                                                                                     
+======================================
+
+2021-02-08 01:04:23 [INFO] MySQL_HostGroups_Manager::commit() locked for 1ms
+2021-02-08 01:04:23 [INFO] Dumping current MySQL Servers structures for hostgroup 10
+2021-02-08 01:04:23 [INFO] Dumping mysql_servers: HG 10
++-----+-------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| hid | hostname    | port | gtid | weight | status | cmp | max_conns | max_lag | ssl | max_lat | comment | mem_pointer     |
++-----+-------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| 10  | 10.27.3.208 | 3455 | 0    | 2      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783169235840 |
++-----+-------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+2021-02-08 01:04:23 [INFO] Dumping current MySQL Servers structures for hostgroup 20
+2021-02-08 01:04:23 [INFO] Dumping mysql_servers: HG 20
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| hid | hostname     | port | gtid | weight | status | cmp | max_conns | max_lag | ssl | max_lat | comment | mem_pointer     |
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| 20  | 10.16.56.136 | 3455 | 0    | 1      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783114412992 |
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+2021-02-08 01:04:23 [INFO] Dumping current MySQL Servers structures for hostgroup 30
+2021-02-08 01:04:23 [INFO] Dumping mysql_servers: HG 30
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| hid | hostname     | port | gtid | weight | status | cmp | max_conns | max_lag | ssl | max_lat | comment | mem_pointer     |
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| 30  | 10.16.56.136 | 3455 | 0    | 1      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783114428192 |
+| 30  | 10.27.3.208  | 3455 | 0    | 2      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783110234048 |
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+2021-02-08 01:04:23 [INFO] Dumping current MySQL Servers structures for hostgroup 40
+2021-02-08 01:04:23 [INFO] Dumping mysql_servers: HG 40
++-----+----------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-------------+
+| hid | hostname | port | gtid | weight | status | cmp | max_conns | max_lag | ssl | max_lat | comment | mem_pointer |
++-----+----------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-------------+
++-----+----------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-------------+
+2021-02-08 01:04:24 MySQL_Thread.cpp:4439:process_all_sessions(): [WARNING] Closing unhealthy client connection 10.16.56.10:47712
+Error: signal 11:
+proxysql(_Z13crash_handleri+0x1a)[0x4b7a1a]
+/lib64/libc.so.6(clone+0x6d)[0x3ca08e8c4d]
+2021-02-08 01:04:28 main.cpp:1573:ProxySQL_daemonize_phase3(): [ERROR] ProxySQL crashed. Restarting!
+2021-02-08 01:04:23 [INFO] Dumping mysql_servers: HG 20
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| hid | hostname     | port | gtid | weight | status | cmp | max_conns | max_lag | ssl | max_lat | comment | mem_pointer     |
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| 20  | 10.16.56.136 | 3455 | 0    | 1      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783114412992 |
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+2021-02-08 01:04:23 [INFO] Dumping current MySQL Servers structures for hostgroup 30
+2021-02-08 01:04:23 [INFO] Dumping mysql_servers: HG 30
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| hid | hostname     | port | gtid | weight | status | cmp | max_conns | max_lag | ssl | max_lat | comment | mem_pointer     |
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| 30  | 10.16.56.136 | 3455 | 0    | 1      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783114428192 |
+| 30  | 10.27.3.208  | 3455 | 0    | 2      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783110234048 |
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+2021-02-08 01:04:23 [INFO] Dumping current MySQL Servers structures for hostgroup 40
+2021-02-08 01:04:23 [INFO] Dumping mysql_servers: HG 40
++-----+----------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-------------+
+| hid | hostname | port | gtid | weight | status | cmp | max_conns | max_lag | ssl | max_lat | comment | mem_pointer |
++-----+----------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-------------+
++-----+----------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-------------+
+2021-02-08 01:04:24 MySQL_Thread.cpp:4439:process_all_sessions(): [WARNING] Closing unhealthy client connection 10.16.56.10:47712
+Error: signal 11:
+proxysql(_Z13crash_handleri+0x1a)[0x4b7a1a]
+2021-02-08 01:04:23 [INFO] Dumping current MySQL Servers structures for hostgroup 10
+2021-02-08 01:04:23 [INFO] Dumping mysql_servers: HG 10
++-----+-------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| hid | hostname    | port | gtid | weight | status | cmp | max_conns | max_lag | ssl | max_lat | comment | mem_pointer     |
++-----+-------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| 10  | 10.27.3.208 | 3455 | 0    | 2      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783169235840 |
++-----+-------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+2021-02-08 01:04:23 [INFO] Dumping current MySQL Servers structures for hostgroup 20
+2021-02-08 01:04:23 [INFO] Dumping mysql_servers: HG 20
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| hid | hostname     | port | gtid | weight | status | cmp | max_conns | max_lag | ssl | max_lat | comment | mem_pointer     |
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| 20  | 10.16.56.136 | 3455 | 0    | 1      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783114412992 |
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+2021-02-08 01:04:23 [INFO] Dumping current MySQL Servers structures for hostgroup 30
+2021-02-08 01:04:23 [INFO] Dumping mysql_servers: HG 30
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| hid | hostname     | port | gtid | weight | status | cmp | max_conns | max_lag | ssl | max_lat | comment | mem_pointer     |
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| 30  | 10.16.56.136 | 3455 | 0    | 1      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783114428192 |
+| 30  | 10.27.3.208  | 3455 | 0    | 2      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783110234048 |
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+2021-02-08 01:04:23 [INFO] Dumping current MySQL Servers structures for hostgroup 40
+2021-02-08 01:04:23 [INFO] Dumping mysql_servers: HG 40
++-----+----------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-------------+
+| hid | hostname | port | gtid | weight | status | cmp | max_conns | max_lag | ssl | max_lat | comment | mem_pointer |
++-----+----------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-------------+
++-----+----------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-------------+
+2021-02-08 01:04:24 MySQL_Thread.cpp:4439:process_all_sessions(): [WARNING] Closing unhealthy client connection 10.16.56.10:47712
+| 10  | 10.27.3.208  | 3455 | 0    | 2      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783165041536 |
+| 30  | 10.27.3.208  | 3455 | 0    | 2      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783116525344 |
+| 30  | 10.16.56.136 | 3455 | 0    | 1      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783108136896 |
+| 20  | 10.16.56.136 | 3455 | 0    | 1      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783108136736 |
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+2021-02-08 01:02:48 [INFO] MySQL_HostGroups_Manager::commit() locked for 1ms
+2021-02-08 01:02:48 [INFO] Dumping current MySQL Servers structures for hostgroup 10
+2021-02-08 01:02:48 [INFO] Dumping mysql_servers: HG 10
++-----+-------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| hid | hostname    | port | gtid | weight | status | cmp | max_conns | max_lag | ssl | max_lat | comment | mem_pointer     |
++-----+-------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| 10  | 10.27.3.208 | 3455 | 0    | 2      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783165041536 |
++-----+-------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+2021-02-08 01:02:48 [INFO] Dumping current MySQL Servers structures for hostgroup 20
+2021-02-08 01:02:48 [INFO] Dumping mysql_servers: HG 20
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| hid | hostname     | port | gtid | weight | status | cmp | max_conns | max_lag | ssl | max_lat | comment | mem_pointer     |
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| 20  | 10.16.56.136 | 3455 | 0    | 1      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783108136736 |
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+2021-02-08 01:02:48 [INFO] Dumping current MySQL Servers structures for hostgroup 30
+2021-02-08 01:02:48 [INFO] Dumping mysql_servers: HG 30
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| hid | hostname     | port | gtid | weight | status | cmp | max_conns | max_lag | ssl | max_lat | comment | mem_pointer     |
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| 30  | 10.16.56.136 | 3455 | 0    | 1      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783108136896 |
+| 30  | 10.27.3.208  | 3455 | 0    | 2      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783116525344 |
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+2021-02-08 01:02:48 [INFO] Dumping current MySQL Servers structures for hostgroup 40
+2021-02-08 01:02:48 [INFO] Dumping mysql_servers: HG 40
++-----+----------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-------------+
+| hid | hostname | port | gtid | weight | status | cmp | max_conns | max_lag | ssl | max_lat | comment | mem_pointer |
++-----+----------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-------------+
++-----+----------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-------------+
+Error: signal 11:
+proxysql(_Z13crash_handleri+0x1a)[0x4b7a1a]
+/lib64/libc.so.6[0x3ca0832570]
+proxysql[0x7fdb86]
+proxysql(_ZN16MySQL_ConnectionD1Ev+0x7c)[0x63fb6c]
+proxysql(_ZN17MySQL_Data_StreamD1Ev+0x2e8)[0x4ef4f8]
+proxysql(_ZN13MySQL_SessionD1Ev+0x48)[0x50aed8]
+proxysql(_ZN12MySQL_Thread20process_all_sessionsEv+0xe8)[0x4f91d8]
+proxysql(_ZN12MySQL_Thread3runEv+0xc4c)[0x50048c]
+proxysql(_Z24mysql_worker_thread_funcPv+0x6c)[0x4b088c]
+/lib64/libpthread.so.0[0x3ca1007aa1]
+/lib64/libc.so.6(clone+0x6d)[0x3ca08e8c4d]
+2021-02-08 01:02:53 main.cpp:1573:ProxySQL_daemonize_phase3(): [ERROR] ProxySQL crashed. Restarting!
+2021-02-08 01:02:53 [INFO] ProxySQL version 2.0.15-20-g32bb92c
+2021-02-08 01:02:53 [INFO] ProxySQL SHA1 checksum: 36464adb5d75bff0cf8c87106d722e12a1373961
+2021-02-08 01:02:53 [INFO] Angel process started ProxySQL process 31158
+Standard ProxySQL MySQL Logger rev. 2.0.0714 -- MySQL_Logger.cpp -- Wed Oct 28 20:09:40 2020
+Standard ProxySQL Cluster rev. 0.4.0906 -- ProxySQL_Cluster.cpp -- Wed Oct 28 20:09:40 2020
+Standard ProxySQL Statistics rev. 1.4.1027 -- ProxySQL_Statistics.cpp -- Wed Oct 28 20:09:40 2020
+Standard ProxySQL HTTP Server Handler rev. 1.4.1031 -- ProxySQL_HTTP_Server.cpp -- Wed Oct 28 20:09:40 2020
+Standard ProxySQL Admin rev. 2.0.6.0805 -- ProxySQL_Admin.cpp -- Wed Oct 28 20:09:40 2020
+2021-02-08 01:02:53 [INFO] ProxySQL SHA1 checksum: 36464adb5d75bff0cf8c87106d722e12a1373961
+Standard MySQL Threads Handler rev. 0.2.0902 -- MySQL_Thread.cpp -- Wed Oct 28 20:09:40 2020
+Standard MySQL Authentication rev. 0.2.0902 -- MySQL_Authentication.cpp -- Wed Oct 28 20:09:40 2020
+2021-02-08 01:02:53 [INFO] Dumping mysql_servers_incoming
++--------------+--------------+------+-----------+--------+--------+-------------+-----------------+---------------------+---------+----------------+---------+
+| hostgroup_id | hostname     | port | gtid_port | weight | status | compression | max_connections | max_replication_lag | use_ssl | max_latency_ms | comment |
++--------------+--------------+------+-----------+--------+--------+-------------+-----------------+---------------------+---------+----------------+---------+
+| 10           | 10.16.56.136 | 3455 | 0         | 1      | 0      | 0           | 200             | 0                   | 0       | 0              |         |
+| 10           | 10.27.3.208  | 3455 | 0         | 2      | 0      | 0           | 200             | 0                   | 0       | 0              |         |
++--------------+--------------+------+-----------+--------+--------+-------------+-----------------+---------------------+---------+----------------+---------+
+2021-02-08 01:02:53 [INFO] Dumping mysql_servers LEFT JOIN mysql_servers_incoming
++-------------+--------------+----------+------+
+| mem_pointer | hostgroup_id | hostname | port |
+
+=============================================================================
+
+2021-02-08 01:04:23 [INFO] Dumping current MySQL Servers structures for hostgroup 10
+2021-02-08 01:04:23 [INFO] Dumping mysql_servers: HG 10
++-----+-------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| hid | hostname    | port | gtid | weight | status | cmp | max_conns | max_lag | ssl | max_lat | comment | mem_pointer     |
++-----+-------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| 10  | 10.27.3.208 | 3455 | 0    | 2      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783169235840 |
++-----+-------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+2021-02-08 01:04:23 [INFO] Dumping current MySQL Servers structures for hostgroup 20
+2021-02-08 01:04:23 [INFO] Dumping mysql_servers: HG 20
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| hid | hostname     | port | gtid | weight | status | cmp | max_conns | max_lag | ssl | max_lat | comment | mem_pointer     |
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| 20  | 10.16.56.136 | 3455 | 0    | 1      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783114412992 |
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+2021-02-08 01:04:23 [INFO] Dumping current MySQL Servers structures for hostgroup 30
+2021-02-08 01:04:23 [INFO] Dumping mysql_servers: HG 30
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| hid | hostname     | port | gtid | weight | status | cmp | max_conns | max_lag | ssl | max_lat | comment | mem_pointer     |
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| 30  | 10.16.56.136 | 3455 | 0    | 1      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783114428192 |
+| 30  | 10.27.3.208  | 3455 | 0    | 2      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783110234048 |
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+2021-02-08 01:04:23 [INFO] Dumping current MySQL Servers structures for hostgroup 40
+2021-02-08 01:04:23 [INFO] Dumping mysql_servers: HG 40
++-----+----------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-------------+
+| hid | hostname | port | gtid | weight | status | cmp | max_conns | max_lag | ssl | max_lat | comment | mem_pointer |
++-----+----------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-------------+
++-----+----------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-------------+
+2021-02-08 01:04:24 MySQL_Thread.cpp:4439:process_all_sessions(): [WARNING] Closing unhealthy client connection 10.16.56.10:47712
+Error: signal 11:
+proxysql(_Z13crash_handleri+0x1a)[0x4b7a1a]
+/lib64/libc.so.6[0x3ca0832570]
+proxysql[0x89fcbe]
+proxysql(_ZN3re24Prog9SearchDFAERKNS_11StringPieceES3_NS0_6AnchorENS0_9MatchKindEPS1_PbPNS_10SparseSetTIvEE+0x3bf)[0x8a2aef]
+proxysql(_ZNK3re23RE25MatchERKNS_11StringPieceEmmNS0_6AnchorEPS1_i+0xb72)[0x87d0f2]
+proxysql(_ZNK3re23RE27DoMatchERKNS_11StringPieceENS0_6AnchorEPmPKPKNS0_3ArgEi+0x215)[0x87eda5]
+proxysql(_ZN13Session_Regex5matchEPc+0x32)[0x504bb2]
+proxysql(_ZN13MySQL_Session72handler___status_WAITING_CLIENT_DATA___STATE_SLEEP___MYSQL_COM_QUERY_qpoEP10_PtrSize_tPbb+0xdc7)[0x50be57]
+proxysql(_ZN13MySQL_Session7handlerEv+0x1b39)[0x519749]
+proxysql(_ZN12MySQL_Thread20process_all_sessionsEv+0x32c)[0x4f941c]
+proxysql(_ZN12MySQL_Thread3runEv+0xc4c)[0x50048c]
+proxysql(_Z24mysql_worker_thread_funcPv+0x6c)[0x4b088c]
+/lib64/libpthread.so.0[0x3ca1007aa1]
+/lib64/libc.so.6(clone+0x6d)[0x3ca08e8c4d]
+2021-02-08 01:04:28 main.cpp:1573:ProxySQL_daemonize_phase3(): [ERROR] ProxySQL crashed. Restarting!
+2021-02-08 01:04:28 [INFO] ProxySQL version 2.0.15-20-g32bb92c
+2021-02-08 01:04:28 [INFO] ProxySQL SHA1 checksum: 36464adb5d75bff0cf8c87106d722e12a1373961
+2021-02-08 01:04:28 [INFO] Angel process started ProxySQL process 32419
+Standard ProxySQL MySQL Logger rev. 2.0.0714 -- MySQL_Logger.cpp -- Wed Oct 28 20:09:40 2020
+Standard ProxySQL Cluster rev. 0.4.0906 -- ProxySQL_Cluster.cpp -- Wed Oct 28 20:09:40 2020
+Standard ProxySQL Statistics rev. 1.4.1027 -- ProxySQL_Statistics.cpp -- Wed Oct 28 20:09:40 2020
+Standard ProxySQL HTTP Server Handler rev. 1.4.1031 -- ProxySQL_HTTP_Server.cpp -- Wed Oct 28 20:09:40 2020
+Standard ProxySQL Admin rev. 2.0.6.0805 -- ProxySQL_Admin.cpp -- Wed Oct 28 20:09:40 2020
+2021-02-08 01:04:28 [INFO] ProxySQL SHA1 checksum: 36464adb5d75bff0cf8c87106d722e12a1373961
+Standard MySQL Threads Handler rev. 0.2.0902 -- MySQL_Thread.cpp -- Wed Oct 28 20:09:40 2020
+Standard MySQL Authentication rev. 0.2.0902 -- MySQL_Authentication.cpp -- Wed Oct 28 20:09:40 2020
+2021-02-08 01:04:28 [INFO] Dumping mysql_servers_incoming
++--------------+--------------+------+-----------+--------+--------+-------------+-----------------+---------------------+---------+----------------+---------+
+| hostgroup_id | hostname     | port | gtid_port | weight | status | compression | max_connections | max_replication_lag | use_ssl | max_latency_ms | comment |
++--------------+--------------+------+-----------+--------+--------+-------------+-----------------+---------------------+---------+----------------+---------+
+| 10           | 10.16.56.136 | 3455 | 0         | 1      | 0      | 0           | 200             | 0                   | 0       | 0              |         |
+| 10           | 10.27.3.208  | 3455 | 0         | 2      | 0      | 0           | 200             | 0                   | 0       | 0              |         |
++--------------+--------------+------+-----------+--------+--------+-------------+-----------------+---------------------+---------+----------------+---------+
+2021-02-08 01:04:28 [INFO] Dumping mysql_servers LEFT JOIN mysql_servers_incoming
++-------------+--------------+----------+------+
+| mem_pointer | hostgroup_id | hostname | port |
++-------------+--------------+----------+------+
+
+=================================================
+2021-02-08 01:04:23 [INFO] Dumping mysql_servers_incoming
++--------------+--------------+------+-----------+--------+--------+-------------+-----------------+---------------------+---------+----------------+---------+
+| hostgroup_id | hostname     | port | gtid_port | weight | status | compression | max_connections | max_replication_lag | use_ssl | max_latency_ms | comment |
++--------------+--------------+------+-----------+--------+--------+-------------+-----------------+---------------------+---------+----------------+---------+
+| 10           | 10.27.3.208  | 3455 | 0         | 2      | 0      | 0           | 200             | 0                   | 0       | 0              |         |
+| 30           | 10.16.56.136 | 3455 | 0         | 1      | 0      | 0           | 200             | 0                   | 0       | 0              |         |
++--------------+--------------+------+-----------+--------+--------+-------------+-----------------+---------------------+---------+----------------+---------+
+2021-02-08 01:04:23 [INFO] Dumping mysql_servers LEFT JOIN mysql_servers_incoming
++-------------+--------------+----------+------+
+| mem_pointer | hostgroup_id | hostname | port |
++-------------+--------------+----------+------+
++-------------+--------------+----------+------+
+2021-02-08 01:04:23 [INFO] Dumping mysql_servers: ALL
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| hid | hostname     | port | gtid | weight | status | cmp | max_conns | max_lag | ssl | max_lat | comment | mem_pointer     |
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| 10  | 10.27.3.208  | 3455 | 0    | 2      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783169235840 |
+| 30  | 10.27.3.208  | 3455 | 0    | 2      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783110234048 |
+| 30  | 10.16.56.136 | 3455 | 0    | 1      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783114428192 |
+| 20  | 10.16.56.136 | 3455 | 0    | 1      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783114412992 |
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+2021-02-08 01:04:23 [INFO] MySQL_HostGroups_Manager::commit() locked for 1ms
+2021-02-08 01:04:23 [INFO] Dumping current MySQL Servers structures for hostgroup 10
+2021-02-08 01:04:23 [INFO] Dumping mysql_servers: HG 10
++-----+-------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| hid | hostname    | port | gtid | weight | status | cmp | max_conns | max_lag | ssl | max_lat | comment | mem_pointer     |
++-----+-------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| 10  | 10.27.3.208 | 3455 | 0    | 2      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783169235840 |
++-----+-------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+2021-02-08 01:04:23 [INFO] Dumping current MySQL Servers structures for hostgroup 20
+2021-02-08 01:04:23 [INFO] Dumping mysql_servers: HG 20
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| hid | hostname     | port | gtid | weight | status | cmp | max_conns | max_lag | ssl | max_lat | comment | mem_pointer     |
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| 20  | 10.16.56.136 | 3455 | 0    | 1      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783114412992 |
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+2021-02-08 01:04:23 [INFO] Dumping current MySQL Servers structures for hostgroup 30
+2021-02-08 01:04:23 [INFO] Dumping mysql_servers: HG 30
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| hid | hostname     | port | gtid | weight | status | cmp | max_conns | max_lag | ssl | max_lat | comment | mem_pointer     |
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| 30  | 10.16.56.136 | 3455 | 0    | 1      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783114428192 |
+| 30  | 10.27.3.208  | 3455 | 0    | 2      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783110234048 |
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+2021-02-08 01:04:23 [INFO] Dumping current MySQL Servers structures for hostgroup 40
+2021-02-08 01:04:23 [INFO] Dumping mysql_servers: HG 40
++-----+----------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-------------+
+| hid | hostname | port | gtid | weight | status | cmp | max_conns | max_lag | ssl | max_lat | comment | mem_pointer |
++-----+----------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-------------+
++-----+----------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-------------+
+2021-02-08 01:04:24 MySQL_Thread.cpp:4439:process_all_sessions(): [WARNING] Closing unhealthy client connection 10.16.56.10:47712
+Error: signal 11:
+proxysql(_Z13crash_handleri+0x1a)[0x4b7a1a]
+/lib64/libc.so.6(clone+0x6d)[0x3ca08e8c4d]
+2021-02-08 01:04:28 main.cpp:1573:ProxySQL_daemonize_phase3(): [ERROR] ProxySQL crashed. Restarting!
+2021-02-08 01:04:28 [INFO] ProxySQL version 2.0.15-20-g32bb92c
+2021-02-08 01:04:28 [INFO] ProxySQL SHA1 checksum: 36464adb5d75bff0cf8c87106d722e12a1373961
+2021-02-08 01:04:28 [INFO] Angel process started ProxySQL process 32419
+Standard ProxySQL MySQL Logger rev. 2.0.0714 -- MySQL_Logger.cpp -- Wed Oct 28 20:09:40 2020
+Standard ProxySQL Cluster rev. 0.4.0906 -- ProxySQL_Cluster.cpp -- Wed Oct 28 20:09:40 2020
+Standard ProxySQL Statistics rev. 1.4.1027 -- ProxySQL_Statistics.cpp -- Wed Oct 28 20:09:40 2020
+Standard ProxySQL HTTP Server Handler rev. 1.4.1031 -- ProxySQL_HTTP_Server.cpp -- Wed Oct 28 20:09:40 2020
+Standard ProxySQL Admin rev. 2.0.6.0805 -- ProxySQL_Admin.cpp -- Wed Oct 28 20:09:40 2020
+2021-02-08 01:04:28 [INFO] ProxySQL SHA1 checksum: 36464adb5d75bff0cf8c87106d722e12a1373961
+Standard MySQL Threads Handler rev. 0.2.0902 -- MySQL_Thread.cpp -- Wed Oct 28 20:09:40 2020
+Standard MySQL Authentication rev. 0.2.0902 -- MySQL_Authentication.cpp -- Wed Oct 28 20:09:40 2020
+2021-02-08 01:04:28 [INFO] Dumping mysql_servers_incoming
++--------------+--------------+------+-----------+--------+--------+-------------+-----------------+---------------------+---------+----------------+---------+
+| hostgroup_id | hostname     | port | gtid_port | weight | status | compression | max_connections | max_replication_lag | use_ssl | max_latency_ms | comment |
++--------------+--------------+------+-----------+--------+--------+-------------+-----------------+---------------------+---------+----------------+---------+
+| 10           | 10.16.56.136 | 3455 | 0         | 1      | 0      | 0           | 200             | 0                   | 0       | 0              |         |
+| 10           | 10.27.3.208  | 3455 | 0         | 2      | 0      | 0           | 200             | 0                   | 0       | 0              |         |
++--------------+--------------+------+-----------+--------+--------+-------------+-----------------+---------------------+---------+----------------+---------+
+2021-02-08 01:04:28 [INFO] Dumping mysql_servers LEFT JOIN mysql_servers_incoming
+
+
+====================
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| 10  | 10.27.3.208  | 3455 | 0    | 2      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783169235840 |
+| 30  | 10.27.3.208  | 3455 | 0    | 2      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783106039744 |
+| 30  | 10.16.56.136 | 3455 | 0    | 1      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783110234048 |
+| 20  | 10.16.56.136 | 3455 | 0    | 1      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783110233888 |
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+2021-02-08 02:56:18 [INFO] MySQL_HostGroups_Manager::commit() locked for 2ms
+2021-02-08 02:56:18 [INFO] Dumping current MySQL Servers structures for hostgroup 10
+2021-02-08 02:56:18 [INFO] Dumping mysql_servers: HG 10
++-----+-------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| hid | hostname    | port | gtid | weight | status | cmp | max_conns | max_lag | ssl | max_lat | comment | mem_pointer     |
++-----+-------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| 10  | 10.27.3.208 | 3455 | 0    | 2      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783169235840 |
++-----+-------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+2021-02-08 02:56:18 [INFO] Dumping current MySQL Servers structures for hostgroup 20
+2021-02-08 02:56:18 [INFO] Dumping mysql_servers: HG 20
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| hid | hostname     | port | gtid | weight | status | cmp | max_conns | max_lag | ssl | max_lat | comment | mem_pointer     |
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| 20  | 10.16.56.136 | 3455 | 0    | 1      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783110233888 |
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+2021-02-08 02:56:18 [INFO] Dumping current MySQL Servers structures for hostgroup 30
+2021-02-08 02:56:18 [INFO] Dumping mysql_servers: HG 30
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| hid | hostname     | port | gtid | weight | status | cmp | max_conns | max_lag | ssl | max_lat | comment | mem_pointer     |
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| 30  | 10.16.56.136 | 3455 | 0    | 1      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783110234048 |
+| 30  | 10.27.3.208  | 3455 | 0    | 2      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783106039744 |
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+2021-02-08 02:56:18 [INFO] Dumping current MySQL Servers structures for hostgroup 40
+2021-02-08 02:56:18 [INFO] Dumping mysql_servers: HG 40
++-----+----------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-------------+
+| hid | hostname | port | gtid | weight | status | cmp | max_conns | max_lag | ssl | max_lat | comment | mem_pointer |
++-----+----------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-------------+
+/lib64/libc.so.6(clone+0x6d)[0x3ca08e8c4d]
+2021-02-08 02:56:22 main.cpp:1573:ProxySQL_daemonize_phase3(): [ERROR] ProxySQL crashed. Restarting!
+2021-02-08 02:56:22 [INFO] ProxySQL version 2.0.15-20-g32bb92c
+2021-02-08 02:56:22 [INFO] ProxySQL SHA1 checksum: 36464adb5d75bff0cf8c87106d722e12a1373961
+2021-02-08 02:56:22 [INFO] Angel process started ProxySQL process 20782
+Standard ProxySQL MySQL Logger rev. 2.0.0714 -- MySQL_Logger.cpp -- Wed Oct 28 20:09:40 2020
+Standard ProxySQL Cluster rev. 0.4.0906 -- ProxySQL_Cluster.cpp -- Wed Oct 28 20:09:40 2020
+Standard ProxySQL Statistics rev. 1.4.1027 -- ProxySQL_Statistics.cpp -- Wed Oct 28 20:09:40 2020
+Standard ProxySQL HTTP Server Handler rev. 1.4.1031 -- ProxySQL_HTTP_Server.cpp -- Wed Oct 28 20:09:40 2020
+Standard ProxySQL Admin rev. 2.0.6.0805 -- ProxySQL_Admin.cpp -- Wed Oct 28 20:09:40 2020
+2021-02-08 02:56:22 [INFO] ProxySQL SHA1 checksum: 36464adb5d75bff0cf8c87106d722e12a1373961
+Standard MySQL Threads Handler rev. 0.2.0902 -- MySQL_Thread.cpp -- Wed Oct 28 20:09:40 2020
++--------------+--------------+------+-----------+--------+--------+-------------+-----------------+---------------------+---------+----------------+---------+
+| 10           | 10.16.56.136 | 3455 | 0         | 1      | 0      | 0           | 200             | 0                   | 0       | 0              |         |
+| 10           | 10.27.3.208  | 3455 | 0         | 2      | 0      | 0           | 200             | 0                   | 0       | 0              |         |
++--------------+--------------+------+-----------+--------+--------+-------------+-----------------+---------------------+---------+----------------+---------+
+2021-02-08 02:56:22 [INFO] Dumping mysql_servers LEFT JOIN mysql_servers_incoming
++-------------+--------------+----------+------+
+| mem_pointer | hostgroup_id | hostname | port |
++-------------+--------------+----------+------+
++-------------+--------------+----------+------+
+2021-02-08 02:56:22 [INFO] Dumping mysql_servers JOIN mysql_servers_incoming
++--------------+--------------+------+-----------+--------+--------+-------------+-----------------+---------------------+---------+----------------+---------+-------------+-----------+--------+--------+-------------+-----------------+---------------------+---------+----------------+---------+
+| hostgroup_id | hostname     | port | gtid_port | weight | status | compression | max_connections | max_replication_lag | use_ssl | max_latency_ms | comment | mem_pointer | gtid_port | weight | status | compression | max_connections | max_replication_lag | use_ssl | max_latency_ms | comment |
++--------------+--------------+------+-----------+--------+--------+-------------+-----------------+---------------------+---------+----------------+---------+-------------+-----------+--------+--------+-------------+-----------------+---------------------+---------+----------------+---------+
+| 10           | 10.16.56.136 | 3455 | 0         | 1      | 0      | 0           | 200             | 0                   | 0       | 0              |         | 0           | 0         | 1      | 0      | 0           | 200             | 0                   | 0       | 0              |         |
+| 10           | 10.27.3.208  | 3455 | 0         | 2      | 0      | 0           | 200             | 0                   | 0       | 0              |         | 0           | 0         | 2      | 0      | 0           | 200             | 0                   | 0       | 0              |         |
++--------------+--------------+------+-----------+--------+--------+-------------+-----------------+---------------------+---------+----------------+---------+-------------+-----------+--------+--------+-------------+-----------------+---------------------+---------+----------------+---------+
+2021-02-08 02:56:22 [INFO] Creating new server in HG 10 : 10.16.56.136:3455 , gtid_port=0, weight=1, status=0
+2021-02-08 02:56:22 [INFO] Creating new server in HG 10 : 10.27.3.208:3455 , gtid_port=0, weight=2, status=0
+2021-02-08 02:56:22 [INFO] New mysql_group_replication_hostgroups table
+2021-02-08 02:56:22 [INFO] Loading MySQL Group Replication info for (10,20,30,40,on,1,1,0,"(null)")
+2021-02-08 02:56:22 [INFO] New mysql_galera_hostgroups table
+2021-02-08 02:56:22 [INFO] New mysql_aws_aurora_hostgroups table
+2021-02-08 02:56:22 [INFO] MySQL_HostGroups_Manager::commit() locked for 2ms
+Standard Query Processor rev. 2.0.6.0805 -- Query_Processor.cpp -- Wed Oct 28 20:09:40 2020
+In memory Standard Query Cache (SQC) rev. 1.2.0905 -- Query_Cache.cpp -- Wed Oct 28 20:09:40 2020
+Standard MySQL Monitor (StdMyMon) rev. 2.0.1226 -- MySQL_Monitor.cpp -- Wed Oct 28 20:09:40 2020
+2021-02-08 02:56:22 MySQL_HostGroups_Manager.cpp:4034:update_group_replication_set_writer(): [WARNING] Group Replication: setting host 10.16.56.136:3455 as writer
+2021-02-08 02:56:22 [INFO] Dumping current MySQL Servers structures for hostgroup ALL
+HID: 10 , address: 10.16.56.136 , port: 3455 , gtid_port: 0 , weight: 1 , status: ONLINE , max_connections: 200 , max_replication_lag: 0 , use_ssl: 0 , max_latency_ms: 0 , comment:
+HID: 10 , address: 10.27.3.208 , port: 3455 , gtid_port: 0 , weight: 2 , status: ONLINE , max_connections: 200 , max_replication_lag: 0 , use_ssl: 0 , max_latency_ms: 0 , comment:
+2021-02-08 02:56:22 [INFO] Dumping mysql_servers: ALL
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| hid | hostname     | port | gtid | weight | status | cmp | max_conns | max_lag | ssl | max_lat | comment | mem_pointer     |
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| 10  | 10.16.56.136 | 3455 | 0    | 1      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783169236160 |
+| 10  | 10.27.3.208  | 3455 | 0    | 2      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783169235840 |
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+
+
+==========================================================================================
+| hid | hostname     | port | gtid | weight | status | cmp | max_conns | max_lag | ssl | max_lat | comment | mem_pointer     |
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| 10  | 10.27.3.208  | 3455 | 0    | 2      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783169235840 |
+| 30  | 10.27.3.208  | 3455 | 0    | 2      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783106039744 |
+| 30  | 10.16.56.136 | 3455 | 0    | 1      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783110234048 |
+| 20  | 10.16.56.136 | 3455 | 0    | 1      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783110233888 |
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+2021-02-08 11:27:07 [INFO] MySQL_HostGroups_Manager::commit() locked for 1ms
+2021-02-08 11:27:07 [INFO] Dumping current MySQL Servers structures for hostgroup 10
+2021-02-08 11:27:07 [INFO] Dumping mysql_servers: HG 10
++-----+-------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| hid | hostname    | port | gtid | weight | status | cmp | max_conns | max_lag | ssl | max_lat | comment | mem_pointer     |
++-----+-------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| 10  | 10.27.3.208 | 3455 | 0    | 2      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783169235840 |
++-----+-------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+2021-02-08 11:27:07 [INFO] Dumping current MySQL Servers structures for hostgroup 20
+2021-02-08 11:27:07 [INFO] Dumping mysql_servers: HG 20
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| hid | hostname     | port | gtid | weight | status | cmp | max_conns | max_lag | ssl | max_lat | comment | mem_pointer     |
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| 20  | 10.16.56.136 | 3455 | 0    | 1      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783110233888 |
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+2021-02-08 11:27:07 [INFO] Dumping current MySQL Servers structures for hostgroup 30
+2021-02-08 11:27:07 [INFO] Dumping mysql_servers: HG 30
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| hid | hostname     | port | gtid | weight | status | cmp | max_conns | max_lag | ssl | max_lat | comment | mem_pointer     |
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+| 30  | 10.16.56.136 | 3455 | 0    | 1      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783110234048 |
+| 30  | 10.27.3.208  | 3455 | 0    | 2      | 0      | 0   | 200       | 0       | 0   | 0       |         | 139783106039744 |
++-----+--------------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-----------------+
+2021-02-08 11:27:07 [INFO] Dumping current MySQL Servers structures for hostgroup 40
+2021-02-08 11:27:07 [INFO] Dumping mysql_servers: HG 40
++-----+----------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-------------+
+| hid | hostname | port | gtid | weight | status | cmp | max_conns | max_lag | ssl | max_lat | comment | mem_pointer |
++-----+----------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-------------+
++-----+----------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-------------+
+/lib64/libc.so.6(clone+0x6d)[0x3ca08e8c4d]
+2021-02-08 11:27:12 main.cpp:1573:ProxySQL_daemonize_phase3(): [ERROR] ProxySQL crashed. Restarting!
+2021-02-08 11:27:12 [INFO] ProxySQL version 2.0.15-20-g32bb92c
+2021-02-08 11:27:12 [INFO] ProxySQL SHA1 checksum: 36464adb5d75bff0cf8c87106d722e12a1373961
+2021-02-08 11:27:12 [INFO] Angel process started ProxySQL process 24744
+Standard ProxySQL MySQL Logger rev. 2.0.0714 -- MySQL_Logger.cpp -- Wed Oct 28 20:09:40 2020
+Standard ProxySQL Cluster rev. 0.4.0906 -- ProxySQL_Cluster.cpp -- Wed Oct 28 20:09:40 2020
+Standard ProxySQL Statistics rev. 1.4.1027 -- ProxySQL_Statistics.cpp -- Wed Oct 28 20:09:40 2020
++-----+----------+------+------+--------+--------+-----+-----------+---------+-----+---------+---------+-------------+
+/lib64/libc.so.6(clone+0x6d)[0x3ca08e8c4d]
+2021-02-08 11:27:12 main.cpp:1573:ProxySQL_daemonize_phase3(): [ERROR] ProxySQL crashed. Restarting!
+2021-02-08 11:27:12 [INFO] ProxySQL version 2.0.15-20-g32bb92c
+2021-02-08 11:27:12 [INFO] ProxySQL SHA1 checksum: 36464adb5d75bff0cf8c87106d722e12a1373961
+2021-02-08 11:27:12 [INFO] Angel process started ProxySQL process 24744
+Standard ProxySQL MySQL Logger rev. 2.0.0714 -- MySQL_Logger.cpp -- Wed Oct 28 20:09:40 2020
+Standard ProxySQL Cluster rev. 0.4.0906 -- ProxySQL_Cluster.cpp -- Wed Oct 28 20:09:40 2020
+Standard ProxySQL Statistics rev. 1.4.1027 -- ProxySQL_Statistics.cpp -- Wed Oct 28 20:09:40 2020
+Standard ProxySQL HTTP Server Handler rev. 1.4.1031 -- ProxySQL_HTTP_Server.cpp -- Wed Oct 28 20:09:40 2020
+Standard ProxySQL Admin rev. 2.0.6.0805 -- ProxySQL_Admin.cpp -- Wed Oct 28 20:09:40 2020
+2021-02-08 11:27:12 [INFO] ProxySQL SHA1 checksum: 36464adb5d75bff0cf8c87106d722e12a1373961
+Standard MySQL Threads Handler rev. 0.2.0902 -- MySQL_Thread.cpp -- Wed Oct 28 20:09:40 2020
+Standard MySQL Authentication rev. 0.2.0902 -- MySQL_Authentication.cpp -- Wed Oct 28 20:09:40 2020
+2021-02-08 11:27:12 [INFO] Dumping mysql_servers_incoming
++--------------+--------------+------+-----------+--------+--------+-------------+-----------------+---------------------+---------+----------------+---------+
+| hostgroup_id | hostname     | port | gtid_port | weight | status | compression | max_connections | max_replication_lag | use_ssl | max_latency_ms | comment |
++--------------+--------------+------+-----------+--------+--------+-------------+-----------------+---------------------+---------+----------------+---------+
+| 10           | 10.16.56.136 | 3455 | 0         | 1      | 0      | 0           | 200             | 0                   | 0       | 0              |         |
+| 10           | 10.27.3.208  | 3455 | 0         | 2      | 0      | 0           | 200             | 0                   | 0       | 0              |         |
++--------------+--------------+------+-----------+--------+--------+-------------+-----------------+---------------------+---------+----------------+---------+
+2021-02-08 11:27:12 [INFO] Dumping mysql_servers LEFT JOIN mysql_servers_incoming
++-------------+--------------+----------+------+
+| mem_pointer | hostgroup_id | hostname | port |
++-------------+--------------+----------+------+
++-------------+--------------+----------+------+
+2021-02-08 11:27:12 [INFO] Dumping mysql_servers JOIN mysql_servers_incoming
++--------------+--------------+------+-----------+--------+--------+-------------+-----------------+---------------------+---------+----------------+---------+-------------+-----------+--------+--------+-------------+-----------------+---------------------+---------+----------------+---------+
+| hostgroup_id | hostname     | port | gtid_port | weight | status | compression | max_connections | max_replication_lag | use_ssl | max_latency_ms | comment | mem_pointer | gtid_port | weight | status | compression | max_connections | max_replication_lag | use_ssl | max_latency_ms | comment |
++--------------+--------------+------+-----------+--------+--------+-------------+-----------------+---------------------+---------+----------------+---------+-------------+-----------+--------+--------+-------------+-----------------+---------------------+---------+----------------+---------+
+| 10           | 10.16.56.136 | 3455 | 0         | 1      | 0      | 0           | 200             | 0                   | 0       | 0              |         | 0           | 0         | 1      | 0      | 0           | 200             | 0                   | 0       | 0              |         |
+| 10           | 10.27.3.208  | 3455 | 0         | 2      | 0      | 0           | 200             | 0                   | 0       | 0              |         | 0           | 0         | 2      | 0      | 0           | 200             | 0                   | 0       | 0              |         |
++--------------+--------------+------+-----------+--------+--------+-------------+-----------------+---------------------+---------+----------------+---------+-------------+-----------+--------+--------+-------------+-----------------+---------------------+---------+----------------+---------+
+2021-02-08 11:27:12 [INFO] Creating new server in HG 10 : 10.16.56.136:3455 , gtid_port=0, weight=1, status=0
+2021-02-08 11:27:12 [INFO] Creating new server in HG 10 : 10.27.3.208:3455 , gtid_port=0, weight=2, status=0
+2021-02-08 11:27:12 [INFO] New mysql_group_replication_hostgroups table
+2021-02-08 11:27:12 [INFO] Loading MySQL Group Replication info for (10,20,30,40,on,1,1,0,"(null)")

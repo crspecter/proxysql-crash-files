@@ -1,0 +1,5 @@
+hostgroup_id	hostname	port	gtid_port	status	weight	compression	max_connections	max_replication_lag	use_ssl	max_latency_ms	comment
+10	10.27.3.208	3455	0	ONLINE	2	0	200	0	0	0	
+30	10.27.3.208	3455	0	ONLINE	2	0	200	0	0	0	
+30	10.16.56.136	3455	0	ONLINE	1	0	200	0	0	0	
+20	10.16.56.136	3455	0	ONLINE	1	0	200	0	0	0	

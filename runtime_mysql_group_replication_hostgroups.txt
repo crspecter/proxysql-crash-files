@@ -1,0 +1,2 @@
+writer_hostgroup	backup_writer_hostgroup	reader_hostgroup	offline_hostgroup	active	max_writers	writer_is_also_reader	max_transactions_behind	comment
+10	20	30	40	1	1	1	0	NULL
